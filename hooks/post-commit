@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Chemin vers ton fichier CHANGELOG
+CHANGELOG_PATH="CHANGELOG.md"
+
+# Récupère le dernier commit
+LAST_COMMIT=$(git log -1 --pretty=format:"%h - %s")
+
+# Ajoute le dernier commit au début de ton CHANGELOG
+echo "$LAST_COMMIT" >> $CHANGELOG_PATH
