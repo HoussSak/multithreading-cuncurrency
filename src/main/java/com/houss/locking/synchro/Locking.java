@@ -12,13 +12,13 @@ public class Locking {
         // at the same time != parallel - CPU time slicing
         // there is a single intrinsic lock associated with every object or class in Java
         //
-        //a given  thread that needs exclusive and consistent access to an object's fields
+        //a given thread that needs exclusive and consistent access to an object's fields
         //
         //has to acquire the object's intrinsic lock before accessing them,
         //
         //and then the thread releases the intrinsic lock when it's done with them
         //
-        //with Locks: the acquired lock can be released any thread
+        //with Locks: the acquired lock can be released by any thread
         //
         //RLocks can be released by the thread that acquired it exclusively
         //

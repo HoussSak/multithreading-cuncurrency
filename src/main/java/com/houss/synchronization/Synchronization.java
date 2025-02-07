@@ -8,7 +8,7 @@ public class Synchronization {
     // at a given time
     public static void incrementCounter1() {
 
-        //Class levrl locking
+        //Class level locking
         // Rule of thumb: we syncho blocks that are 100% necessary
         synchronized(Synchronization.class) {
             counter1++;
